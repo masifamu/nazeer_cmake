@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/nazeerExecutable.dir/main.cpp.o"
-  "CMakeFiles/nazeerExecutable.dir/main.cpp.o.d"
+  "CMakeFiles/nazeerExecutable.dir/app/main.cpp.o"
+  "CMakeFiles/nazeerExecutable.dir/app/main.cpp.o.d"
   "nazeerExecutable"
   "nazeerExecutable.pdb"
 )

@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/app/main.cpp" "CMakeFiles/nazeerExecutable.dir/app/main.cpp.o" "gcc" "CMakeFiles/nazeerExecutable.dir/app/main.cpp.o.d"
+  "/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/src/my_lib.cpp" "CMakeFiles/nazeerLibrary.dir/src/my_lib.cpp.o" "gcc" "CMakeFiles/nazeerLibrary.dir/src/my_lib.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles/nazeerLibrary.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

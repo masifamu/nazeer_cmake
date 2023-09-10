@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_Hel
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/nazeerLibrary.dir/all
 all: CMakeFiles/nazeerExecutable.dir/all
 .PHONY : all
 
@@ -71,14 +72,41 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/nazeerLibrary.dir/clean
 clean: CMakeFiles/nazeerExecutable.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/nazeerLibrary.dir
+
+# All Build rule for target.
+CMakeFiles/nazeerLibrary.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerLibrary.dir/build.make CMakeFiles/nazeerLibrary.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerLibrary.dir/build.make CMakeFiles/nazeerLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles --progress-num=3,4 "Built target nazeerLibrary"
+.PHONY : CMakeFiles/nazeerLibrary.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/nazeerLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nazeerLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles 0
+.PHONY : CMakeFiles/nazeerLibrary.dir/rule
+
+# Convenience name for target.
+nazeerLibrary: CMakeFiles/nazeerLibrary.dir/rule
+.PHONY : nazeerLibrary
+
+# clean rule for target.
+CMakeFiles/nazeerLibrary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerLibrary.dir/build.make CMakeFiles/nazeerLibrary.dir/clean
+.PHONY : CMakeFiles/nazeerLibrary.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/nazeerExecutable.dir
 
 # All Build rule for target.
-CMakeFiles/nazeerExecutable.dir/all:
+CMakeFiles/nazeerExecutable.dir/all: CMakeFiles/nazeerLibrary.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles --progress-num=1,2 "Built target nazeerExecutable"
@@ -86,7 +114,7 @@ CMakeFiles/nazeerExecutable.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nazeerExecutable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nazeerExecutable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles 0
 .PHONY : CMakeFiles/nazeerExecutable.dir/rule

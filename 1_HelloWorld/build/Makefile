@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named nazeerLibrary
+
+# Build rule for target.
+nazeerLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nazeerLibrary
+.PHONY : nazeerLibrary
+
+# fast build rule for target.
+nazeerLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerLibrary.dir/build.make CMakeFiles/nazeerLibrary.dir/build
+.PHONY : nazeerLibrary/fast
+
+#=============================================================================
 # Target rules for targets named nazeerExecutable
 
 # Build rule for target.
@@ -129,29 +142,53 @@ nazeerExecutable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/build
 .PHONY : nazeerExecutable/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+app/main.o: app/main.cpp.o
+.PHONY : app/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/main.cpp.o
-.PHONY : main.cpp.o
+app/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/app/main.cpp.o
+.PHONY : app/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+app/main.i: app/main.cpp.i
+.PHONY : app/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/main.cpp.i
-.PHONY : main.cpp.i
+app/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/app/main.cpp.i
+.PHONY : app/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+app/main.s: app/main.cpp.s
+.PHONY : app/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/main.cpp.s
-.PHONY : main.cpp.s
+app/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerExecutable.dir/build.make CMakeFiles/nazeerExecutable.dir/app/main.cpp.s
+.PHONY : app/main.cpp.s
+
+src/my_lib.o: src/my_lib.cpp.o
+.PHONY : src/my_lib.o
+
+# target to build an object file
+src/my_lib.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerLibrary.dir/build.make CMakeFiles/nazeerLibrary.dir/src/my_lib.cpp.o
+.PHONY : src/my_lib.cpp.o
+
+src/my_lib.i: src/my_lib.cpp.i
+.PHONY : src/my_lib.i
+
+# target to preprocess a source file
+src/my_lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerLibrary.dir/build.make CMakeFiles/nazeerLibrary.dir/src/my_lib.cpp.i
+.PHONY : src/my_lib.cpp.i
+
+src/my_lib.s: src/my_lib.cpp.s
+.PHONY : src/my_lib.s
+
+# target to generate assembly for a file
+src/my_lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nazeerLibrary.dir/build.make CMakeFiles/nazeerLibrary.dir/src/my_lib.cpp.s
+.PHONY : src/my_lib.cpp.s
 
 # Help Target
 help:
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... nazeerExecutable"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... nazeerLibrary"
+	@echo "... app/main.o"
+	@echo "... app/main.i"
+	@echo "... app/main.s"
+	@echo "... src/my_lib.o"
+	@echo "... src/my_lib.i"
+	@echo "... src/my_lib.s"
 .PHONY : help
 
 

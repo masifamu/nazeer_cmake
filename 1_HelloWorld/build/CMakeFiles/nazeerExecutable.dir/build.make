@@ -69,29 +69,30 @@ include CMakeFiles/nazeerExecutable.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/nazeerExecutable.dir/flags.make
 
-CMakeFiles/nazeerExecutable.dir/main.cpp.o: CMakeFiles/nazeerExecutable.dir/flags.make
-CMakeFiles/nazeerExecutable.dir/main.cpp.o: ../main.cpp
-CMakeFiles/nazeerExecutable.dir/main.cpp.o: CMakeFiles/nazeerExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nazeerExecutable.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nazeerExecutable.dir/main.cpp.o -MF CMakeFiles/nazeerExecutable.dir/main.cpp.o.d -o CMakeFiles/nazeerExecutable.dir/main.cpp.o -c /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/main.cpp
+CMakeFiles/nazeerExecutable.dir/app/main.cpp.o: CMakeFiles/nazeerExecutable.dir/flags.make
+CMakeFiles/nazeerExecutable.dir/app/main.cpp.o: ../app/main.cpp
+CMakeFiles/nazeerExecutable.dir/app/main.cpp.o: CMakeFiles/nazeerExecutable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nazeerExecutable.dir/app/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nazeerExecutable.dir/app/main.cpp.o -MF CMakeFiles/nazeerExecutable.dir/app/main.cpp.o.d -o CMakeFiles/nazeerExecutable.dir/app/main.cpp.o -c /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/app/main.cpp
 
-CMakeFiles/nazeerExecutable.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nazeerExecutable.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/main.cpp > CMakeFiles/nazeerExecutable.dir/main.cpp.i
+CMakeFiles/nazeerExecutable.dir/app/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nazeerExecutable.dir/app/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/app/main.cpp > CMakeFiles/nazeerExecutable.dir/app/main.cpp.i
 
-CMakeFiles/nazeerExecutable.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nazeerExecutable.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/main.cpp -o CMakeFiles/nazeerExecutable.dir/main.cpp.s
+CMakeFiles/nazeerExecutable.dir/app/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nazeerExecutable.dir/app/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/app/main.cpp -o CMakeFiles/nazeerExecutable.dir/app/main.cpp.s
 
 # Object files for target nazeerExecutable
 nazeerExecutable_OBJECTS = \
-"CMakeFiles/nazeerExecutable.dir/main.cpp.o"
+"CMakeFiles/nazeerExecutable.dir/app/main.cpp.o"
 
 # External object files for target nazeerExecutable
 nazeerExecutable_EXTERNAL_OBJECTS =
 
-nazeerExecutable: CMakeFiles/nazeerExecutable.dir/main.cpp.o
+nazeerExecutable: CMakeFiles/nazeerExecutable.dir/app/main.cpp.o
 nazeerExecutable: CMakeFiles/nazeerExecutable.dir/build.make
+nazeerExecutable: libnazeerLibrary.a
 nazeerExecutable: CMakeFiles/nazeerExecutable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable nazeerExecutable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nazeerExecutable.dir/link.txt --verbose=$(VERBOSE)

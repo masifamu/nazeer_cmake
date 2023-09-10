@@ -1,5 +1,5 @@
-CMakeFiles/nazeerExecutable.dir/main.cpp.o: \
- /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/main.cpp \
+CMakeFiles/nazeerLibrary.dir/src/my_lib.cpp.o: \
+ /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/src/my_lib.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -145,4 +145,5 @@ CMakeFiles/nazeerExecutable.dir/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/src/../inc/my_lib.h

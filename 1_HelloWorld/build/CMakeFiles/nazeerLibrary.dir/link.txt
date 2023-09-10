@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnazeerLibrary.a CMakeFiles/nazeerLibrary.dir/src/my_lib.cpp.o
+/usr/bin/ranlib libnazeerLibrary.a
