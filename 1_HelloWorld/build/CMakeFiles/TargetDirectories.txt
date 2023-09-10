@@ -1,0 +1,3 @@
+/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles/nazeerExecutable.dir
+/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles/edit_cache.dir
+/home/syntiant_0005/asif_syntiant/learning/nazeer_cmake/1_HelloWorld/build/CMakeFiles/rebuild_cache.dir
