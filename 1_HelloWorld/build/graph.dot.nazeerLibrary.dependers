@@ -1,0 +1,8 @@
+digraph "nazeerLibrary" {
+node [
+  fontsize = "12"
+];
+    "node1" [ label = "nazeerLibrary", shape = octagon ];
+    "node0" [ label = "nazeerExecutable", shape = egg ];
+    "node0" -> "node1" [ style = dotted ] // nazeerExecutable -> nazeerLibrary
+}

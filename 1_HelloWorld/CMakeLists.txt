@@ -20,7 +20,7 @@ project(${PROJECT_NAME} VERSION 1.0.0 LANGUAGES C CXX)
 add_library(${LIB_NAME} STATIC src/my_lib.cpp)
 #target_include_directories(nazeerLibrary PUBLIC "inc")
 
-option(GENERATE_EXECUTABLE "Whether to compile the executable" OFF)
+option(GENERATE_EXECUTABLE "Whether to compile the executable" ON)
 if(GENERATE_EXECUTABLE)
     message("Compiling Executable")
     add_executable(${EXECUTABLE_NAME} app/main.cpp)
